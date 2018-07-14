@@ -72,7 +72,7 @@ int main()
 		printf("Input file cannot be opened!\n");
 		return -1;
 	}
-	if ((foutput = fopen("top_drug_cost.txt","w")) == NULL)
+	if ((foutput = fopen("top_cost_drug.txt","w")) == NULL)
 	{
 		printf("Output file cannot be opened!\n");
 		return -1;
