@@ -9,5 +9,5 @@ coding approach:
 
 running instructions:
 1. this program is written in C language
-2. users may need to change the path and the name of the input/output files if these files are not in the right locations.
+2. users may need to change the path and the name of the input/output files if these files are not in the right locations. line 70 and 75 of the program.
 3. this program uses three header files: <stdio.h>, <stdlib.h> and <string.h>
