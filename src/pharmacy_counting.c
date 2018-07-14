@@ -2,7 +2,7 @@
 # include <stdlib.h>
 # include <string.h>
 
-# define MAXNAME 100  //max length of drug names, prescriber's last names and first names
+# define MAXNAME 50  //max length of drug names, prescriber's last names and first names
 # define NDRUG 10000 //max number of drugs
 
 struct record 
@@ -67,12 +67,12 @@ int main()
 	rec.cost = 0;
 	
 	// open intput and output files
-	if ((finput = fopen("itcont.txt","r")) == NULL)
+	if ((finput = fopen("input/itcont.txt","r")) == NULL)
 	{
 		printf("Input file cannot be opened!\n");
 		return -1;
 	}
-	if ((foutput = fopen("top_cost_drug.txt","w")) == NULL)
+	if ((foutput = fopen("output/top_cost_drug.txt","w")) == NULL)
 	{
 		printf("Output file cannot be opened!\n");
 		return -1;
