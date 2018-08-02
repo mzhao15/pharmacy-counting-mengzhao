@@ -129,7 +129,7 @@ int main()
 		else
 		{
 			// end of line, ch == '\n'
-			rec.cost = atof(temp);  //convert string to int
+			rec.cost = atof(temp);  //convert string to float
 			//printf("%d,%s,%s,%s,%.2f\n",rec.id,rec.last_name,rec.first_name,rec.drug_name,rec.cost);
 
 			/*search in 'cost', if there is rec.drug_name, update the number of prescribers and total cost;
@@ -160,7 +160,7 @@ int main()
 	} while (!(feof(finput)));
 
 	//end of file, last record/line
-	rec.cost = atof(temp);  //convert string to int
+	rec.cost = atof(temp);  //convert string to float
 	//printf("%d,%s,%s,%s,%.2f\n",rec.id,rec.last_name,rec.first_name,rec.drug_name,rec.cost);
 	drugnum = search(rec, drugnum);
 	if (drugnum > NDRUG)
